@@ -5,9 +5,9 @@
 
 Lottery::Lottery()
 {
-  //  items.push_back(new Products::Fun::Toy("Bear","Ukraine",2000,2,"wood"));
-    //items.push_back(new Products::Fun::Book("C++","Ranok",5000,12,"Straustrup","Since",1000));
-   // items.push_back(new Sport::Clothing("T-shirt","China",500,10,"cotton","M",10));
+    /*items.push_back(new Products::Fun::Toy("Bear","Ukraine",2000,2,"wood"));*/
+    /*items.push_back(new Products::Fun::Book("C++","Ranok",5000,12,"Straustrup","Since",1000));*/
+    //items.push_back(new Sport::Clothing("T-shirt","China",500,10,"cotton","M",10));
 }
 
 Lottery::~Lottery()
@@ -70,7 +70,3 @@ void Lottery::load()
         file.close();
     }
 }
-
-
-
-

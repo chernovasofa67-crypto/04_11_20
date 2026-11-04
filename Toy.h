@@ -12,7 +12,7 @@
 namespace Products {
     namespace Fun {
         class Toy :
-         public Product
+            public Product
         {
         protected:
             std::string material;
@@ -30,5 +30,6 @@ namespace Products {
         };
     }
 }
+
 
 #endif //INC_04_11_20_TOY_H

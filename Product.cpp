@@ -1,4 +1,6 @@
 #include "Product.h"
+#include "Product.h"
+
 Products::Product::Product()
 {
     name = "undefined";
@@ -15,37 +17,46 @@ Products::Product::Product(std::string name, std::string producer, float price, 
     this->age = age;
 }
 
-Products::Product::~Product() {
+Products::Product::~Product()
+{
 }
 
-void Products::Product::setName(std::string name) {
+void Products::Product::setName(std::string name)
+{
     this->name = name;
 }
 
-void Products::Product::setProducer(std::string producer) {
+void Products::Product::setProducer(std::string producer)
+{
     this->producer = producer;
 }
 
-void Products::Product::setPrice(float price) {
+void Products::Product::setPrice(float price)
+{
     this->price = price;
 }
 
-void Products::Product::setAge(int age) {
+void Products::Product::setAge(int age)
+{
     this->age = age;
 }
 
-std::string Products::Product::getName() const {
-    return this->name;
+std::string Products::Product::getName() const
+{
+    return name;
 }
 
-std::string Products::Product::getProducer() const {
-    return this->producer;
+std::string Products::Product::getProducer() const
+{
+    return producer;
 }
 
-float Products::Product::getPrice() const {
-    return this->price;
+float Products::Product::getprice() const
+{
+    return price;
 }
 
-int Products::Product::getAge() const {
-    return this->age;
+int Products::Product::getAge() const
+{
+    return age;
 }

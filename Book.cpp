@@ -4,6 +4,8 @@
 
 #include "Book.h"
 
+#include "Book.h"
+
 using std::cout;
 using std::cin;
 
@@ -75,7 +77,7 @@ float Products::Fun::Book::calcPrice() const
     if (age <= 12) {
         total += price * 0.1;
     }
-return total;
+    return total;
 }
 
 void Products::Fun::Book::saveToFile(std::ofstream& file) const
@@ -96,7 +98,9 @@ void Products::Fun::Book::loadFromFile(std::ifstream& file)
     getline(file, producer);
     file >> price;
     file >> age;
-    getline(file, ganre);
+    file.ignore();
     getline(file, author);
+    getline(file, ganre);
     file >> numberOfPages;
+    file.ignore();
 }

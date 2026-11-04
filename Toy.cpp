@@ -64,5 +64,6 @@ void Products::Fun::Toy::loadFromFile(std::ifstream& file)
     getline(file, producer);
     file >> price;
     file >> age;
+    file.ignore();
     getline(file, material);
 }

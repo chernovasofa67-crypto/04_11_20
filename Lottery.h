@@ -4,11 +4,8 @@
 
 #ifndef INC_04_11_20_LOTTERY_H
 #define INC_04_11_20_LOTTERY_H
-
 #pragma once
 #include <vector>
-#include <fstream>
-#include <string>
 #include "Toy.h"
 #include "Book.h"
 #include "Clothing.h"
@@ -16,18 +13,14 @@
 
 class Lottery
 {
-
-    std::vector<Products::Product*> items;
-
+    std::vector<Products::Product*>items;
 public:
     Lottery();
     ~Lottery();
-
-    void show() const;
-    void save() const;
+    void show()const;
+    void save()const;
     void load();
 };
-
 
 
 #endif //INC_04_11_20_LOTTERY_H
