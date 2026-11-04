@@ -5,4 +5,15 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(04_11_20 main.cpp
         Product.h
-        Product.cpp)
+        Product.cpp
+        Clothing.cpp
+        Clothing.h
+        Toy.cpp
+        Toy.h
+        Book.cpp
+        Book.h
+        BoardGame.cpp
+        BoardGame.h
+        Lottery.cpp
+        Lottery.h
+)
